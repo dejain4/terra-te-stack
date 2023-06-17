@@ -11,3 +11,38 @@ The terra-te-stack project is a comprehensive implementation of Infrastructure-a
 - Modular and Reusable Modules: Utilize modular design patterns and reusable Terraform modules to promote code reusability, reduce duplication, and simplify infrastructure management.
 - Scalability and Flexibility: Effortlessly scale resources and adapt the infrastructure to changing needs, accommodating growth and evolving application requirements.
 - Documentation and Examples: Find comprehensive documentation, detailed examples, and step-by-step guides to help you understand and effectively utilize the terra-te-stack project.
+
+## Step by Step Guide 
+
+1. Project directory structure as described:
+
+```
+- terra-te-stack/
+  - main.tf
+  - provider.tf
+  - environments/
+    - dev/
+      - compute.tfvars
+  - modules/
+    - compute/
+      - main.tf
+      - variables.tf
+      - outputs.tf
+    - storage/
+      - main.tf
+      - variables.tf
+      - outputs.tf
+```
+
+2. Set the environment variable with your DigitalOcean token in your shell or terminal session:
+
+```shell
+export TF_VAR_digitalocean_token="your-digitalocean-token"
+```
+
+3. Run the following Terraform commands from the `terra-te-stack` directory:
+
+- `terraform init` (initialize Terraform in the root directory)
+- `terraform validate` (validate the configuration files)
+- `terraform plan -var-file=environments/dev/compute.tfvars -var-file=environments/dev/storage.tfvars` (preview the changes to be made)
+- `terraform apply -var-file=environments/dev/compute.tfvars -var-file=environments/dev/storage.tfvars` (apply the changes)

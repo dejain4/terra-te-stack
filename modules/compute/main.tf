@@ -1,13 +1,13 @@
 resource "digitalocean_droplet" "presentation" {
-  name  = "presentation-server"
-  region = "nyc1"
-  size  = "s-1vcpu-1gb"
-  image = "ubuntu-20-04-x64"
+  name    = var.presentation_name
+  region  = var.region
+  size    = var.size
+  image   = var.image
 }
 
 resource "digitalocean_droplet" "application" {
-  name  = "application-server"
-  region = "nyc1"
-  size  = "s-1vcpu-1gb"
-  image = "ubuntu-20-04-x64"
+  name    = var.application_name
+  region  = var.region
+  size    = var.size
+  image   = var.image
 }
