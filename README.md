@@ -1,5 +1,5 @@
 # terra-te-stack
-Building and Securing Infrastructure-as-Code using Three-Tier Architecture
+Building and Securing Infrastructure-as-Code on DigitalOcean Cloud with Terraform, utilizing Three-Tier Architecture
 
 ## Description: 
 The terra-te-stack project is a comprehensive implementation of Infrastructure-as-Code (IaC) using Terraform, aimed at building and securing a three-tier architecture. This repository provides a standardized and efficient approach to deploy and manage the infrastructure required for modern web applications.
