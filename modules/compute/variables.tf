@@ -1,35 +1,44 @@
 variable "presentation_name" {
-  description = "Name for the presentation server"
+  description = "Name of the presentation droplet"
   type        = string
-  default     = "presentation-server"
+}
+
+variable "presentation_region" {
+  description = "Region for the presentation droplet"
+  type        = string
+}
+
+variable "presentation_size" {
+  description = "Size of the presentation droplet"
+  type        = string
+}
+
+variable "presentation_image" {
+  description = "Image for the presentation droplet"
+  type        = string
 }
 
 variable "application_name" {
-  description = "Name for the application server"
+  description = "Name of the application droplet"
   type        = string
-  default     = "application-server"
 }
 
-variable "region" {
-  description = "Region for the droplets"
+variable "application_region" {
+  description = "Region for the application droplet"
   type        = string
-  default     = "nyc1"
 }
 
-variable "size" {
-  description = "Size of the droplets"
+variable "application_size" {
+  description = "Size of the application droplet"
   type        = string
-  default     = "s-1vcpu-1gb"
 }
 
-variable "image" {
-  description = "Image for the droplets"
+variable "application_image" {
+  description = "Image for the application droplet"
   type        = string
-  default     = "ubuntu-20-04-x64"
 }
 
 variable "digitalocean_token" {
-  description = "DigitalOcean API token."
+  description = "Digitalocean token"
   type        = string
-  default     = ""
 }

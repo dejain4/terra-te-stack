@@ -1,19 +1,24 @@
 variable "database_name" {
-  description = "Name of the database droplet."
+  description = "Name of the database"
   type        = string
 }
 
 variable "database_region" {
-  description = "Region for the database droplet."
+  description = "Region where the database is located"
   type        = string
 }
 
 variable "database_size" {
-  description = "Database droplet size."
+  description = "Size of the database"
   type        = string
 }
 
 variable "database_image" {
-  description = "Database droplet image."
+  description = "Image for the database"
+  type        = string
+}
+
+variable "digitalocean_token" {
+  description = "Digitalocean token"
   type        = string
 }

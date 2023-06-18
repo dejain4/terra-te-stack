@@ -1,3 +1,8 @@
+variable "digitalocean_token" {
+  description = "Digitalocean token"
+  type        = string
+}
+
 variable "presentation_name" {
   description = "Name of the presentation droplet"
   type        = string
@@ -35,11 +40,6 @@ variable "application_size" {
 
 variable "application_image" {
   description = "Image for the application droplet"
-  type        = string
-}
-
-variable "digitalocean_token" {
-  description = "Digitalocean token"
   type        = string
 }
 
